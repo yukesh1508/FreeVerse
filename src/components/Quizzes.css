@@ -1,0 +1,92 @@
+/* General Container Styling */
+.quizzes {
+    padding: 2rem;
+    background-color: #f9f9f9; /* Light background color for contrast */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for the container */
+  }
+  
+  /* Heading Styling */
+  h2 {
+    font-size: 2rem;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    text-transform: capitalize;
+    text-align: center;
+  }
+  
+  /* Card Styling */
+  .card {
+    background-color: #ffffff; /* White card background */
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for cards */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .card:hover {
+    transform: scale(1.05); /* Slight scaling on hover for interaction feedback */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+  }
+  
+  /* Card Body */
+  .card-body {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+  }
+  
+  /* Card Title */
+  .card-title {
+    font-size: 1.25rem;
+    color: #222;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+  
+  /* Card Text */
+  .card-text {
+    font-size: 1rem;
+    color: #555; /* Muted text color for descriptions */
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+  }
+  
+  /* Button Styling */
+  .btn {
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 8px;
+    padding: 0.5rem 1.5rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .btn-success {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+  }
+  
+  .btn-success:hover {
+    background-color: #218838;
+    transform: translateY(-2px); /* Slight lift on hover */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    h2 {
+      font-size: 1.75rem;
+    }
+  
+    .card-title {
+      font-size: 1.15rem;
+    }
+  
+    .card-text {
+      font-size: 0.9rem;
+    }
+  }
+  

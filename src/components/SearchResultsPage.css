@@ -1,0 +1,142 @@
+/* General Container Styles */
+.container {
+  margin-top: 20px;
+}
+
+/* Title */
+.search-results-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* List Styling */
+.video-list {
+  list-style: none;
+  padding: 0;
+}
+
+/* Shared Card Styles for Video, Quiz, and Interview Items */
+.video-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #fff;
+  transition: box-shadow 0.3s ease-in-out;
+  padding: 10px;
+}
+
+.video-item:hover {
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Thumbnail Image */
+.thumbnail {
+  width: 150px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+/* Video & Quiz Content */
+.video-content,
+.quiz-content,
+.interview-content {
+  padding: 10px 15px;
+  flex: 1;
+}
+
+/* Titles */
+.video-title,
+.quiz-title,
+.interview-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #007bff;
+  margin: 0 0 5px 0;
+  text-decoration: none;
+}
+
+.video-title:hover,
+.quiz-title:hover,
+.interview-title:hover {
+  text-decoration: underline;
+}
+
+/* Descriptions */
+.video-description,
+.quiz-description,
+.interview-description {
+  font-size: 14px;
+  color: #555;
+  margin: 0 0 10px 0;
+}
+
+/* Buttons */
+.watch-button,
+.quiz-button,
+.interview-button {
+  background-color: #28a745;
+  color: white;
+  padding: 5px 15px;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+}
+
+.watch-button:hover {
+  background-color: #218838;
+}
+
+.quiz-button {
+  background-color: #007bff;
+}
+
+.quiz-button:hover {
+  background-color: #0056b3;
+}
+
+.interview-button {
+  background-color: #ffc107;
+  color: #333;
+}
+
+.interview-button:hover {
+  background-color: #e0a800;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .video-item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .thumbnail {
+    width: 100%;
+    height: auto;
+  }
+
+  .video-content,
+  .quiz-content,
+  .interview-content {
+    padding: 15px;
+  }
+
+  .watch-button,
+  .quiz-button,
+  .interview-button {
+    width: 100%;
+  }
+}

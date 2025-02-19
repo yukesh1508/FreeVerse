@@ -1,0 +1,86 @@
+/* Navbar Styling */
+.navbar {
+    background-color: #f4f4f4; /* Light gray background */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  }
+  
+  .navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333; /* Dark gray text for brand */
+    text-transform: uppercase;
+  }
+  
+  .navbar-nav .nav-link {
+    color: #555; /* Medium gray for nav links */
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: #007bff; /* Blue color on hover */
+  }
+  
+  .navbar-toggler {
+    border: none;
+    color: #333;
+  }
+  
+  .navbar-toggler-icon {
+    filter: brightness(0.4); /* Dark gray for the toggler icon */
+  }
+  
+  .form-control {
+    border: 1px solid #ccc; /* Subtle border for the search bar */
+    border-radius: 5px;
+  }
+  
+  .form-control:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Blue glow on focus */
+  }
+  
+  .btn-outline-success {
+    color: #28a745;
+    border-color: #28a745;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .btn-outline-success:hover {
+    background-color: #28a745;
+    color: #fff; /* White text on hover */
+  }
+  
+  .btn-outline-danger {
+    color: #dc3545;
+    border-color: #dc3545;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .btn-outline-danger:hover {
+    background-color: #dc3545;
+    color: #fff; /* White text on hover */
+  }
+  .navbar-brand img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+  }
+  
+  
+  /* Responsive Design */
+  @media (max-width: 992px) {
+    .navbar-nav {
+      text-align: center;
+    }
+    .navbar-nav .nav-link {
+      padding: 0.7rem 0;
+    }
+    .form-control {
+      width: 100%; /* Full width on small screens */
+      margin-bottom: 0.5rem;
+    }
+  }
+  
