@@ -20,7 +20,7 @@ const App = () => {
     const location = useLocation();
 
     // Show the Navbar only on `/home`, `/quizzes`, and `/interview-questions` routes
-    const showNavbar = ["/home", "/quizzes", "/interview-questions", "/coursepage"].includes(location.pathname);
+    const showNavbar = ["/","/home", "/quizzes", "/interview-questions", "/coursepage"].includes(location.pathname);
 
     return showNavbar && <Navbar />;
 
