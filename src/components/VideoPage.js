@@ -1,5 +1,5 @@
-import React from "react";
-import { useParams, useNavigate, Link  } from "react-router-dom";
+import React from "react"
+import { useParams, useNavigate  } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./VideoPage.css";
 
@@ -189,12 +189,7 @@ const VideoPage = () => {
               <button className="btn btn-outline-primary" onClick={() => navigate("/")}>
                 Back to Home
               </button>
-              <Link to="/quizzes" className="btn btn-secondary">
-                Go to Quizzes
-              </Link>
-              <Link to="/interview-questions" className="btn btn-secondary">
-                Go to Interview Questions
-              </Link>
+          
               <button className="btn btn-primary" onClick={() => navigate("/coursepage")}>
               Back to Videos
               </button>

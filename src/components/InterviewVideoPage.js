@@ -1,15 +1,19 @@
 import React from "react";
-import { useParams, useNavigate, useLocation } from "react-router-dom";
+import { useNavigate,useParams } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./InterviewVideo.css";
+import { interviewVideos } from "./InterviewQuestions"; // Import video data
+
 
 const InterviewVideoPage = () => {
   const { id } = useParams();
+  
+ 
   const navigate = useNavigate();
-  const location = useLocation();
-
+  
   // Get the video details from navigation state
-  const video = location.state?.video;
+  const video = interviewVideos.find((v) => v.id.toString() === id);
+
 
   if (!video) {
     return (

@@ -75,7 +75,7 @@ const SearchResultsPage = () => {
                   <div className="video-content">
                     <h5 className="interview-title">{item.title}</h5>
                     <p className="interview-description">{item.category}</p>
-                    <Link to={`/interview/${item.id}`} state={{ video: item }} className="interview-button">
+                    <Link to={`/interview-video/${item.id}`} className="interview-button">
                       Watch Now
                     </Link>
 
