@@ -6,7 +6,7 @@ const Layout = ({ children }) => {
     const location = useLocation();
 
     // Define routes where the footer should not appear
-    const noFooterRoutes = ['/login', '/signup',"/search"];
+    const noFooterRoutes = ['/login', '/signup',"/search","/interview-video","/interview-questions" ];
 
     // Check if the current path matches any of the noFooterRoutes
     const shouldHideFooter = noFooterRoutes.includes(location.pathname);
