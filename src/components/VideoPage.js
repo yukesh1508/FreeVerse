@@ -40,7 +40,7 @@ export const videos = [
     id: 6,
     title: "Java Programming for Beginners: From Fundamentals to Applications",
     description: "Master the basics of Java programming and start building powerful applications. This course covers essential concepts to kickstart your coding journey and develop real-world software.",
-    link: "https://www.youtube.com/embed/jS4aFq5-91M?si=9vy7DTThdlaxveps",
+    link: "https://youtube.com/embed/watch?v=xTtL8E4LzTQ&si=k2JzNTEx3Pv1mukZ",
   },
   {
     id: 7,
